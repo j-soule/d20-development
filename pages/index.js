@@ -1,6 +1,6 @@
 import Head from "next/head";
-import {LandingPageHeader} from "../components/header/LandingPageHeader";
-import {NavBar} from "../components/navigation/NavBar";
+import {LandingPageHeader} from "./../components/header";
+import {NavBar} from "./../components/navigation";
 
 
 export default function Home() {
