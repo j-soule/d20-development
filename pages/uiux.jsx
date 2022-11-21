@@ -1,6 +1,10 @@
+import {ContentPageHeader} from '../components/headers'
+
 function UiUxPage() {
     return(
-        <p>ui ux page</p>
+        <>
+        <ContentPageHeader type='ui-ux developers' title='the next big thing' tagline='Makes the last big thing useable' />
+        </>
     );
 }
 
