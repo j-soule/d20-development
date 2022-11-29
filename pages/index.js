@@ -14,9 +14,9 @@ export default function Home() {
         <title>D20 Development</title>
       </Head>
      
-      <NavBar/>
+      
       <LandingPageHeader/>
-      <ContentPageHeader type='d20 developers' title='the next big thing' tagline='Makes the last big thing useable'/>
+      {/* <ContentPageHeader type='d20 developers' title='the next big thing' tagline='Makes the last big thing useable'/> */}
     </>
   );
 }
