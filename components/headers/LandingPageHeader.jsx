@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import bannerImage from './../../public/banner.png'
 
-function LandingPageHeader(){ return (
+function LandingPageHeader(){ 
+    return (
     <header className='p-10 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600'>
         <figure className='flex flex-col justify-center items-center
         md:flex-row gap-8

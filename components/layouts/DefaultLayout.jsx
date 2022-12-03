@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {NavBar} from '../navigation'
-function DefaultLayout({
+export default function DefaultLayout({
   children,
   pageTitle = 'This is the default title',
 }) {
@@ -19,4 +19,4 @@ function DefaultLayout({
     </>
   )
 }
-export default DefaultLayout;
+// export default DefaultLayout;

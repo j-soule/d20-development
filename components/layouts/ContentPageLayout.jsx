@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { ContentPageHeader } from "../headers";
 
-function ContentPageLayout({ children, title, type, tagline}) {
+export default function ContentPageLayout({ children, title, type, tagline}) {
   return (
     <>
       <Head>
@@ -16,4 +16,4 @@ function ContentPageLayout({ children, title, type, tagline}) {
   );
 }
 
-export default ContentPageLayout;
+// export default ContentPageLayout;

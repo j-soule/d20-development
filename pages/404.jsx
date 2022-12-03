@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function PageNotFound(){
     return(
         <div className="bg-indigo-900 relative overflow-hidden h-screen">
@@ -12,6 +13,12 @@ export default function PageNotFound(){
                     <p className="font-extrabold text-8xl my-44 text-white animate-bounce">
                         404
                     </p>
+        <Link
+                href="/"
+                className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              >
+                Go back home
+              </Link>
                 </div>
             </div>
         </div>

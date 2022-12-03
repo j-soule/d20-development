@@ -12,7 +12,7 @@ function DeveloperCard({fullName, avatar, jobTitle, experience, availability}){
                 src={avatar}
                 width={128}
                 height={128}
-                className="rounded-full"
+                className="rounded-full border-gray-400/200 p-1 bg-gray-800"
                 />
                 <h2 className='text-2xl font-semibold text-gray-800'>{fullName}</h2>
              

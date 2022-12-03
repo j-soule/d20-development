@@ -1,6 +1,6 @@
 import Head from "next/head";
 import {LandingPageHeader} from "../components/headers";
-import {NavBar} from "./../components/navigation";
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -16,7 +16,9 @@ export default function Home() {
      
       
       <LandingPageHeader/>
-      {/* <ContentPageHeader type='d20 developers' title='the next big thing' tagline='Makes the last big thing useable'/> */}
+      <main>
+        
+      </main>
     </>
   );
 }

@@ -1,5 +1,6 @@
 
-import GitHubButton from './GitHubButton';
+import GitHubLink from './GitHubLink';
+import GitHubButton from './GitHubLink';
 import LoginButton from './LoginButton';
 import MobileMenuButton from './MobileMenuButton' ;
 import NavBarBranding from "./NavBarBranding";
@@ -11,8 +12,12 @@ function NavBar() {
         <nav className="p-2 shadow relative flex justify-between">
             <NavBarBranding/>
             <NavBarLinks/>
-            <GitHubButton className='md:flex '/>
+            <div>
+            <GitHubLink className='md:flex '/>
+            
             <LoginButton className='md:flex '/>
+            
+            </div>
             <MobileMenuButton className="md:hidden"/>
         </nav>
     );
