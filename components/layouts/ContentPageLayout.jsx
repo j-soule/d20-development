@@ -16,4 +16,3 @@ export default function ContentPageLayout({ children, title, type, tagline}) {
   );
 }
 
-// export default ContentPageLayout;

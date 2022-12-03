@@ -12,11 +12,12 @@ function UiUxPage({ui}) {
     <>
      
         { ui.map(dev=> <DeveloperCard key={dev.uid} 
-        fullName={dev.fullName} 
+        firstName={dev.firstName} 
+        lastName={dev.lastName} 
         avatar={dev.avatar}
-        jobTitle={dev.jobTitle}
+        email={dev.email}
         experience={dev.experience}
-        availability={dev.availability}
+        active={dev.active}
         />)}
      
     </>

@@ -1,17 +1,18 @@
 import {ContentPageLayout} from '../components/layouts'
-import {getDevelopers} from './../libs/getDevelopers'
+import {getDevelopers} from '../libs/getDevelopers'
 import { DeveloperCard} from './../components/developers'
 
 function FullstackPage() {
     return(
         <>
-        {/* { devs.map(dev=> <DeveloperCard key={dev.uid} 
-          fullName={dev.fullName} 
-          avatar={dev.avatar}
-          jobTitle={dev.jobTitle}
-          experience={dev.experience}
-          availability={dev.availability}
-          />)} */}
+             { devs.map(dev=> <DeveloperCard key={dev.uid} 
+        firstName={dev.firstName} 
+        lastName={dev.lastName} 
+        avatar={dev.avatar}
+        email={dev.email}
+        experience={dev.experience}
+        active={dev.active}
+        />)}
         </>
     );
 }
