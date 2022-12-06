@@ -1,17 +1,20 @@
-import { ContentPageLayout } from "../components/layouts";
+
 import {getDevelopers} from '../libs/getDevelopers'
 import { DeveloperCard} from './../components/developers'
+import { ContentPageLayout } from "../components/layouts";
 function FrontEndPage() {
   return (
     <>
-           { devs.map(dev=> <DeveloperCard key={dev.uid} 
+        { devs.map(dev=> <DeveloperCard key={dev.uid} 
         firstName={dev.firstName} 
         lastName={dev.lastName} 
         avatar={dev.avatar}
         email={dev.email}
         experience={dev.experience}
         active={dev.active}
-        />)}
+        uid={dev.uid}
+        />
+        )}
     </>
   );
 }

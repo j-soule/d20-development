@@ -11,6 +11,7 @@ function BackendPage() {
         email={dev.email}
         experience={dev.experience}
         active={dev.active}
+        uid={dev.uid}
         />)}
         </>
     );
