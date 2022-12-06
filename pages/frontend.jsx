@@ -2,7 +2,7 @@
 import {getDevelopers} from '../libs/getDevelopers'
 import { DeveloperCard} from './../components/developers'
 import { ContentPageLayout } from "../components/layouts";
-function FrontEndPage() {
+function FrontEndPage({devs}) {
   return (
     <>
         { devs.map(dev=> <DeveloperCard key={dev.uid} 

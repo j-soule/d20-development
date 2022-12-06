@@ -1,7 +1,7 @@
 import {ContentPageLayout} from '../components/layouts'
 import {DeveloperCard} from './../components/developers'
 import {getDevelopers} from '../libs/getDevelopers'
-function BackendPage() {
+function BackendPage({devs}) {
     return(
         <>
               { devs.map(dev=> <DeveloperCard key={dev.uid} 

@@ -4,14 +4,14 @@ import {DeveloperCard} from '../components/developers'
 import { getDevelopers } from "../libs/getDevelopers";
 
 
-function UiUxPage({ui}) {
+function UiUxPage({devs}) {
 
-    console.log(ui)
+
 
   return (
     <>
      
-        { ui.map(dev=> <DeveloperCard key={dev.uid} 
+        { devs.map(dev=> <DeveloperCard key={dev.uid} 
         firstName={dev.firstName} 
         lastName={dev.lastName} 
         avatar={dev.avatar}
@@ -45,7 +45,7 @@ export async function getStaticProps(content){
     const uiDevs = devs.filter(devs => devs.type==='ui ux')
     return{
         props:{
-            ui:uiDevs
+            devs:uiDevs
         }
     }
 }

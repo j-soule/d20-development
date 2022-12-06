@@ -2,7 +2,7 @@ import {ContentPageLayout} from '../components/layouts'
 import {getDevelopers} from '../libs/getDevelopers'
 import { DeveloperCard} from './../components/developers'
 
-function FullstackPage() {
+function FullstackPage({devs}) {
     return(
         <>
              { devs.map(dev=> <DeveloperCard key={dev.uid} 
