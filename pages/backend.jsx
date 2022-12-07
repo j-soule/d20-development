@@ -9,8 +9,10 @@ function BackendPage({devs}) {
         lastName={dev.lastName} 
         avatar={dev.avatar}
         email={dev.email}
+        phoneNumber={dev.phoneNumber}
         experience={dev.experience}
         active={dev.active}
+        type={dev.type}
         uid={dev.uid}
         />)}
         </>

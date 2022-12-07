@@ -5,13 +5,15 @@ function DeveloperCard({
   lastName,
   avatar,
   email,
+  phoneNumber,
   experience,
   active,
+  type,
   uid,
 }) {
   const variants = {
-    active: " text-sm text-lime-800",
-    inactive: " text-sm text-red-800",
+    inactive: " text-sm font-bold text-lime-800",
+    active: " text-sm font-bold text-red-800",
   };
   return (
     <aside className="w-full m-4 sm:m-0 sm:w-[calc(50%_-_0.5rem)] lg:w-[calc(33%_-_1rem)] py-10 border-gray-200/50 rounded-md shadow-md">
@@ -28,8 +30,13 @@ function DeveloperCard({
           </h2>
         </header>
         <dl>
+          
           <dt className="sr-only">Email</dt>
           <dd>{email}</dd>
+          <dt className="sr-only">Phone</dt>
+          <dd>{phoneNumber}</dd>
+          <dt className="sr-only">Role</dt>
+          <dd>{type}</dd>
           <dt className="sr-only">Experience</dt>
           <dd>{experience} years experience</dd>
           <dt className="sr-only">Availability</dt>
