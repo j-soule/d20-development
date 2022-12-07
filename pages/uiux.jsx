@@ -6,8 +6,6 @@ import { getDevelopers } from "../libs/getDevelopers";
 
 function UiUxPage({devs}) {
 
-
-
   return (
     <>
      
@@ -44,10 +42,10 @@ UiUxPage.getLayout = function getLayout(page) {
 export async function getStaticProps(content){
     const devs = await getDevelopers()
 
-    const uiDevs = devs.filter(devs => devs.type==='ui ux')
+    const uiux = devs.filter(devs => devs.type==='ux ui')
     return{
         props:{
-            devs:uiDevs
+            devs:uiux
         }
     }
 }
