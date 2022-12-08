@@ -16,6 +16,7 @@ function DeveloperCard({
     active: " text-sm font-bold text-red-800",
   };
   return (
+    
     <aside className="w-full m-4 sm:m-0 sm:w-[calc(50%_-_0.5rem)] lg:w-[calc(33%_-_1rem)] py-10 border-gray-200/50 rounded-md shadow-md">
       <Link href={`/developer/${uid}`}>
         <header className="flex flex-col items-center">
@@ -29,7 +30,7 @@ function DeveloperCard({
             {firstName} {lastName}
           </h2>
         </header>
-        <dl>
+        <dl className="text-navy-400 text-center items-center">
           
           <dt className="sr-only">Email</dt>
           <dd>{email}</dd>

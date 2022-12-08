@@ -8,6 +8,10 @@ function UiUxPage({devs}) {
 
   return (
     <>
+     <ContentPageLayout 
+     type="ui ux developers"
+      title="D20 Developers"
+       tagline="We always roll high initiative">
      
         { devs.map(dev=> <DeveloperCard key={dev.uid} 
        firstName={dev.firstName} 
@@ -20,24 +24,24 @@ function UiUxPage({devs}) {
        type={dev.type}
        uid={dev.uid}
         />)}
-     
+     </ContentPageLayout>
     </>
   );
 }
 
 export default UiUxPage;
 
-UiUxPage.getLayout = function getLayout(page) {
-  return (
-    <ContentPageLayout
-      type="ui-ux developers"
-      title="D20 Developers"
-      tagline="We always roll high initative"
-    >
-      {page}
-    </ContentPageLayout>
-  )
-}
+// UiUxPage.getLayout = function getLayout(page) {
+//   return (
+//     <ContentPageLayout
+//       type="ui ux developers"
+//       title="D20 Developers"
+//       tagline="We always roll high initiative"
+//     >
+//       {page}
+//     </ContentPageLayout>
+//   )
+// }
 
 export async function getStaticProps(content){
     const devs = await getDevelopers()
