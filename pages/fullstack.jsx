@@ -1,7 +1,7 @@
-import {ContentPageLayout} from '../components/layouts'
+
 import {getDevelopers} from '../libs/getDevelopers'
 import { DeveloperCard} from './../components/developers'
-
+import {ContentPageLayout} from '../components/layouts'
 function FullstackPage({devs}) {
     return(
         <>
