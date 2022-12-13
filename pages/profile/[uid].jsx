@@ -1,14 +1,14 @@
 import {DeveloperBioLayout} from '../../components/layouts';
-import {BioHeader, BioNavigation, BioTopic} from "../../components/developer-bio";
+import {BioHeader, BioNav, BioContent} from "../../components/developer-bio";
 import { getDevelopers } from "../../libs/getDevelopers.js";
-import { generateRandomTitle } from "../../libs/generateRandomTitle.js";
+// import { generateRandomTitle } from "../../libs/generateRandomTitle.js";
 
 function SingleDeveloperPage({ avatar, firstName, lastName, city, heading, ...bio}) {
   return (
     <div className="max-w-2xl mx-auto py-20">
-      <BioNavigation avatar={avatar} firstName={firstName} lastName={lastName} />
+      <BioNav avatar={avatar} firstName={firstName} lastName={lastName} />
       <BioHeader city={city}  heading={heading} />
-      <BioTopic topic="About Me" />
+      <BioContent topic="About Me" />
     </div>
   );
 }
