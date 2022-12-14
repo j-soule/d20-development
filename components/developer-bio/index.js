@@ -1,3 +1,3 @@
 export {default as BioHeader} from './BioHeader'
-export {default as BioNavigation} from './BioNavigation'
-export {default as BioTopic} from './BioTopic'
+export {default as BioNav} from './BioNav'
+export {default as BioContent} from './BioContent'
