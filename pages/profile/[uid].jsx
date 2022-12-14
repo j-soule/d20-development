@@ -1,7 +1,7 @@
 import {DeveloperBioLayout} from '../../components/layouts';
 import {BioHeader, BioNav, BioContent} from "../../components/developer-bio";
 import { getDevelopers } from "../../libs/getDevelopers.js";
-// import { generateRandomTitle } from "../../libs/generateRandomTitle.js";
+import { generateRandomTitle } from "../../libs/generateRandomTitle.js";
 
 function SingleDeveloperPage({ avatar, firstName, lastName, city, heading, ...bio}) {
   return (
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const devs = await getDevelopers();
   const dev = devs.find((dev) => dev.uid === params.uid);
-  const bio = { ...dev, };
+  const bio = { ...dev, header: generateRandomTitle() };
 
   return {
     props: bio,
