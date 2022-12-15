@@ -12,7 +12,7 @@ function BioNav({ avatar, firstName}) {
         alt={firstName}
         priority
       />
-      <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-red-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90">
+      <ul className="flex bg-white/90 px-3 text-sm font-medium text-grey-500 shadow-lg  ring-1 ring-zinc-900/5 backdrop-blur ">
         <li className="relative block px-3 py-2 transition hover:text-red-500">
           About
         </li>
