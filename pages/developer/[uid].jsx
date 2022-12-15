@@ -31,7 +31,7 @@ export async function getStaticProps({ params }) {
   const bio = { ...dev, header: generateRandomTitle() };
 
   return {
-    props: bio,
+    props: {bio}
   };
 }
 

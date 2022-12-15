@@ -4,7 +4,7 @@ import { AiOutlineRight } from 'react-icons/ai'
 function BioContent({content}) {
   return (
     <article >
-      <h2 className="text-base font-semibold tracking-tight text-zinc-800">
+      <h2 className="text-base font-semibold tracking-tight text-red-800">
         {content}
       </h2>
 

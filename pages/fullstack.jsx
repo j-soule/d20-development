@@ -22,6 +22,7 @@ function FullstackPage({devs}) {
        active={dev.active}
        type={dev.type}
        uid={dev.uid}
+       city={dev.city}
         />)}
      </ContentPageLayout>
     </>

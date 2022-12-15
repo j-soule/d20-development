@@ -2,13 +2,13 @@ import Image from "next/image";
 
 function BioNav({ avatar, firstName}) {
   return (
-    <nav className="pointer-events-auto flex items-center gap-12 mb-10">
+    <nav className="pointer-events-auto font-semibold flex items-center gap-12 mb-10">
     
       <Image
         src={avatar}
-        width={96}
-        height={96}
-        className="w-[96px] h-[96px] rounded-full"
+        width={128}
+        height={128}
+        className=" rounded-full"
         alt={firstName}
         priority
       />
