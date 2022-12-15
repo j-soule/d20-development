@@ -1,19 +1,30 @@
-import {DeveloperBioLayout} from '../../components/layouts';
-import {BioHeader, BioNav, BioContent} from "../../components/developer-bio";
-import { getDevelopers } from "../../libs/getDevelopers.js";
-import { generateRandomTitle } from "../../libs/generateRandomTitle.js";
-
-function SingleDeveloperPage({ avatar, firstName, lastName, city, heading, ...bio}) {
-  return (
-    <div className="max-w-2xl mx-auto py-20">
-      <BioNav avatar={avatar} firstName={firstName} lastName={lastName} />
-      <BioHeader city={city}  heading={heading} />
-      <BioContent topic="About Me" />
-    </div>
+function DeveloperBio(props){
+  return(
+    <header>
+      <h1>Dev bio page</h1>
+    </header>
   );
 }
 
-export default SingleDeveloperPage;
+export default DeveloperBio;
+
+
+// import {DeveloperBioLayout} from '../../components/layouts';
+// import {BioHeader, BioNav, BioContent} from "../../components/developer-bio";
+// import { getDevelopers } from "../../libs/getDevelopers.js";
+// import { generateRandomTitle } from "../../libs/generateRandomTitle.js";
+
+// function SingleDeveloperPage({ avatar, firstName, lastName, city, heading, ...bio}) {
+//   return (
+//     <div className="max-w-2xl mx-auto py-20">
+//       <BioNav avatar={avatar} firstName={firstName} lastName={lastName} />
+//       <BioHeader city={city}  heading={heading} />
+//       <BioContent topic="About Me" />
+//     </div>
+//   );
+// }
+
+// export default SingleDeveloperPage;
 
 export async function getStaticPaths() {
   const devs = await getDevelopers();
