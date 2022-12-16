@@ -8,24 +8,24 @@ function BioNav({ avatar, firstName}) {
         src={avatar}
         width={128}
         height={128}
-        className=" rounded-full"
+        className=" rounded-full "
         alt={firstName}
         priority
       />
-      <ul className="flex bg-white/90 px-3 text-sm font-medium text-grey-500 shadow-lg  ring-1 ring-zinc-900/5 backdrop-blur ">
-        <li className="relative block px-3 py-2 transition hover:text-red-500">
+      <ul className="flex bg-white/90 px-3 text-sm font-medium text-grey-500  ring-1 ring-zinc-900/5 backdrop-blur ">
+        <li className="relative block font-semibold px-3 py-2 transition hover:text-red-500">
           About
         </li>
-        <li className="relative block px-3 py-2 transition hover:text-red-500">
+        <li className="relative block font-semibold px-3 py-2 transition hover:text-red-500">
           Education
         </li>
-        <li className="relative block px-3 py-2 transition hover:text-red-500">
+        <li className="relative block font-semibold px-3 py-2 transition hover:text-red-500">
           Projects
         </li>
-        <li className="relative block px-3 py-2 transition hover:text-red-500">
+        <li className="relative block px-3 font-semibold py-2 transition hover:text-red-500">
           Experience
         </li>
-        <li className="relative block px-3 py-2 transition hover:text-red-500">
+        <li className="relative block font-semibold px-3 py-2 transition hover:text-red-500">
           Background
         </li>
       </ul>

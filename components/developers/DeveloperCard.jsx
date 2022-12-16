@@ -10,6 +10,7 @@ function DeveloperCard({
   active,
   type,
   uid,
+  city
 }) {
   const variants = {
     inactive: " text-sm font-bold text-lime-800",
@@ -36,6 +37,8 @@ function DeveloperCard({
           <dd>{email}</dd>
           <dt className="sr-only">Phone</dt>
           <dd>{phoneNumber}</dd>
+          <dt className="sr-only">City</dt>
+          <dd>{city}</dd>
           <dt className="sr-only">Role</dt>
           <dd>{type}</dd>
           <dt className="sr-only">Experience</dt>
