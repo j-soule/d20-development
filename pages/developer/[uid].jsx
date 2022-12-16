@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const devs = await getDevelopers();
   const dev = devs.find((dev) => dev.uid === params.uid);
-  const bio = { ...dev, header: generateRandomTitle() };
+  const bio = { ...dev, heading: generateRandomTitle() };
 
   return {
     props: bio,

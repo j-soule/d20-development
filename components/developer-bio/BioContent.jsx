@@ -1,5 +1,5 @@
 import { AiOutlineRight } from 'react-icons/ai'
-
+import Link from 'next/link'
 
 function BioContent({content}) {
   return (
@@ -12,7 +12,7 @@ function BioContent({content}) {
       Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I gave it a cold? I gave it a virus. A computer virus. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs
       </p>
       <footer className="my-4 flex items-center text-sm font-medium text-red-800 font-semibold">
-        <h3>Read more</h3>
+        <h3><Link href="$">Read more</Link></h3>
          <AiOutlineRight className='text-base'/>
       </footer>
     </article>
