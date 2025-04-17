@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bannerImage from './../../public/banner.png'
+import bannerImage from './../../public/d20developers.webp'
 
 function LandingPageHeader(){ 
     return (
